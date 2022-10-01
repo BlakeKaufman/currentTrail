@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/survey.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <!-- main nav -->
+      <ul class="mainNav">
+        <div class="left">
+          <img src="./assets/images/logo-full.png" alt="" />
+        </div>
+        <div class="center">
+          <li class="">
+            <a href="index.html" class="navlink">Home</a>
+          </li>
+          <li class="">
+            <a href="./aboutUs.html" class="navlink">About Us</a>
+          </li>
+          <li class="activeLi">
+            <a href="#" class="navlink activeA">Take the Survey</a>
+          </li>
+          <li class=""><a href="#" class="navlink">Carousels</a></li>
+          <li class="">
+            <a href="index.html#contact" class="navlink">Contact</a>
+          </li>
+        </div>
+        <div class="right">
+          <a href="#"><span class="GetStartedBtn">Get Started</span></a>
+        </div>
+      </ul>
+
+      <!-- mobile nav -->
+      <ul class="mobileNav">
+        <div class="left">
+          <img src="./assets/images/logo-full.png" alt="" />
+        </div>
+        <div class="right">
+          <img
+            class="navBardDropbtn"
+            src="./assets/images/hamburger.svg"
+            alt=""
+          />
+        </div>
+      </ul>
+    </nav>
+
+    <!-- dropdown for navigation -->
+    <div class="dropdown">
+      <ul class="dropdownList">
+        <li class=""><a href="index.html" class="navlink">Home</a></li>
+        <li class=""><a href="#" class="navlink">About Us</a></li>
+        <li class=""><a href="#" class="navlink">Take the Survey</a></li>
+        <li class=""><a href="#" class="navlink">Carousels</a></li>
+        <li class="">
+          <a href="index.html#contact" class="navlink">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--  main section start -->
+
+    <section class="navigation">
+      <div class="left">
+        <img class="logo" src="./assets/images/logo-full.png" alt="" />
+        <div class="tilecontainer">
+          <div class="tile activeBack backgroundFormSelect 0 sticky">
+            <span class="header activeText">Background</span>
+            <spand class="desctiption activeText">Basic background info</spand>
+          </div>
+          <div class="internshipContainer">
+            <div class="tile internshipFormSelect 1">
+              <span class="header">Prior Internship</span>
+              <spand class="desctiption">Tell us about your experience</spand>
+            </div>
+          </div>
+        </div>
+        <div class="addAnother">
+          <img class="icon" src="./assets/images/envelope.svg" alt="" />
+          <div class="text">
+            <span class="addAnotherHead">Add another internship</span>
+            <span class="desctiption">
+              If you have more experience(s), let us know!
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- right side start -->
+      <div class="right">
+        <!-- start of background form -->
+        <div class="backgroundForm 0" style="display: block">
+          <form action="#" method="#">
+            <div class="contain">
+              <input
+                type="text"
+                name="GradYear"
+                id="GradYear"
+                placeholder="Graduation Year (EX: 2025)"
+              />
+            </div>
+            <div class="contain">
+              <input
+                type="text"
+                name="gpa"
+                id="gpa"
+                placeholder="Cumulative GPA"
+              />
+            </div>
+            <div class="schoolContainer contain containWithOptions">
+              <input
+                type="text"
+                name="school"
+                id="school"
+                placeholder="School/College(s)"
+              />
+              <div class="addOption">
+                <span class="add">Add Multiple +</span>
+                <div class="options optionsSchool">
+                  <div class="option">
+                    <span class="selectedOption">Ross</span>
+                    <span class="remove"> X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="majorContianer contain containWithOptions">
+              <input
+                type="text"
+                name="major"
+                id="major"
+                placeholder="Major(s)"
+              />
+              <div class="addOption">
+                <span class="add">Add Multiple +</span>
+                <div class="options optionsMajor">
+                  <div class="option">
+                    <span class="selectedOption">Computer Science</span>
+                    <span class="remove"> X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="minorContainer contain containWithOptions">
+              <input
+                type="text"
+                name="minor"
+                id="minor"
+                placeholder="Minor(s)"
+              />
+              <div class="addOption">
+                <span class="add">Add Multiple +</span>
+                <div class="options optionsMinor">
+                  <div class="option">
+                    <span class="selectedOption">Grass</span>
+                    <span class="remove"> X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="extraContainer contain">
+              <input
+                type="text"
+                name="extra-curricular"
+                id="extra-curricular"
+                placeholder="Extracurricular Involvement/Clubs"
+              />
+              <div class="addOption">
+                <span class="add">Add Multiple +</span>
+                <div class="options optionsExtraCur">
+                  <div class="option">
+                    <span class="selectedOption">Investment Club</span>
+                    <span class="remove"> X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- end of background form -->
+
+        <!-- start of internship form -->
+
+        <div class="internshipForm">
+          <div class="controls">
+            <div class="recruitment container activeInternForm">
+              <span class="title"> recruitment</span>
+            </div>
+            <div class="expiernece container">
+              <span class="title"> Experience</span>
+            </div>
+          </div>
+          <!-- controls section end  -->
+          <!-- recuitment form start -->
+          <div class="recruitmentForm 1">
+            <form action="#" method="#">
+              <div class="contain">
+                <input
+                  type="text"
+                  name="position"
+                  id="position"
+                  placeholder="Position Title"
+                />
+              </div>
+              <div class="contain containWithOptions">
+                <input
+                  type="text"
+                  name="industry"
+                  id="industry"
+                  placeholder="Industry"
+                />
+                <div class="addOption">
+                  <span class="add">Add Multiple +</span>
+                  <div class="options optionsIndusry">
+                    <div class="option">
+                      <span class="selectedOption">Tech</span>
+                      <span class="remove"> X</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="schoolContainer contain containWithOptions">
+                <input
+                  type="text"
+                  name="SeasonCycle"
+                  id="SeasonCycle"
+                  placeholder="Season of Recruitment Cycle"
+                />
+                <div class="addOption">
+                  <span class="add">Add Multiple +</span>
+                  <div class="options optionsSeason">
+                    <div class="option">
+                      <span class="selectedOption">Winter</span>
+                      <span class="remove"> X</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="majorContianer contain containWithOptions">
+                <input
+                  type="text"
+                  name="skills"
+                  id="skills"
+                  placeholder="Technical Skills Required"
+                />
+                <div class="addOption">
+                  <span class="add">Add Multiple +</span>
+                  <div class="options optionsSkills">
+                    <div class="option">
+                      <span class="selectedOption">Python</span>
+                      <span class="remove"> X</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- recuitment form end -->
+          <!-- experience Form start -->
+          <div class="experienceForm 2">
+            <form action="#" method="#">
+              <div class="contain">
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Location"
+                />
+              </div>
+              <div class="contain">
+                <input
+                  type="text"
+                  name="numYearsExp"
+                  id="numYearsExp"
+                  placeholder="Year(s) of Experience"
+                />
+              </div>
+
+              <div class="schoolContainer contain">
+                <input
+                  type="text"
+                  name="wage"
+                  id="wage"
+                  placeholder="Hourly Wage"
+                />
+              </div>
+              <div class="majorContianer contain containWithOptions">
+                <input
+                  type="text"
+                  name="culture"
+                  id="culture"
+                  placeholder="Work Culture"
+                />
+                <div class="addOption">
+                  <span class="add">Add Multiple +</span>
+                  <div class="options optionsCulture">
+                    <div class="option">
+                      <span class="selectedOption">Intense</span>
+                      <span class="remove"> X</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- recuitment form end -->
+        </div>
+        <div class="navBtnForForm">
+          <div class="container back"><span>Home</span></div>
+          <div class="container continue"><span>Contine</span></div>
+        </div>
+      </div>
+    </section>
+    <script src="./nav.js"></script>
+    <script src="./form.js"></script>
+    <script src="./addOptionForm.js"></script>
+    <script src="./addOptionIntern.js"></script>
+  </body>
+</html>

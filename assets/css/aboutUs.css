@@ -1,0 +1,66 @@
+/* style for all */
+.number {
+  font-size: 60px;
+  color: gray;
+  letter-spacing: 4px;
+}
+.header {
+  font-size: 30px;
+  color: black;
+}
+.desctip {
+  font-size: 20px;
+  color: var(--buttonColor);
+}
+/* main section start */
+
+.values {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: max(15vh, 90px);
+}
+h1 {
+  font-size: min(10vw, 50px);
+}
+
+.values .container {
+  display: flex;
+  margin: max(3vh, 15px) 0;
+}
+.values .right {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  .values {
+    width: 95%;
+  }
+  h1 {
+    font-size: 8vw;
+    text-align: center;
+    margin: 0;
+  }
+  .number {
+    font-size: 40px;
+  }
+  .header {
+    font-size: max(4vw, 25px);
+  }
+  .desctip {
+    font-size: max(3vw, 18px);
+  }
+  .values .right {
+    padding-left: max(4vw, 20px);
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+  }
+  .values .right {
+    transform: translateY(max(3vh, 20px));
+  }
+}

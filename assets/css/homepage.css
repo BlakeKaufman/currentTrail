@@ -1,0 +1,425 @@
+/* globsl h1 style */
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: max(5vh, 50px) 0 max(2vh, 20px) 0;
+}
+/* ////////////////////////////////// */
+/* main section start */
+.introduction {
+  width: 95%;
+  height: calc(100vh - 80px);
+  min-height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+}
+.introduction .content {
+  height: 95%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introduction .scrollBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introduction .scrollBtn span {
+  font-size: 18px;
+}
+.introduction .scrollBtn img {
+  width: 50%;
+  transform: translateY(-2vh);
+}
+
+/* right side */
+.introduction .title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.introduction h1 {
+  font-size: 30px;
+  margin-bottom: max(2vh, 20px);
+}
+.introduction h4 {
+  font-size: 18px;
+  margin-bottom: max(2vh, 20px);
+  color: var(--buttonColor);
+}
+.introduction .textBtn {
+  display: flex;
+  flex-direction: column;
+}
+.introduction .introBTN {
+  width: 150px;
+  height: 40px;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background-color: var(--buttonColor);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* slider */
+.introduction .slideshow {
+  width: max(40vw, 600px);
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.introduction .slideshow .background {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 105%;
+  height: 110%;
+  z-index: -1;
+}
+.introduction .slideshow .slide {
+  width: 95%;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.introduction .slideshow .slide img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .introduction {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .introduction .content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .introduction .slideshow {
+    margin-top: 0;
+    align-self: center;
+    width: 400px;
+  }
+  .introduction .title {
+    width: 100%;
+  }
+  .introduction h1 {
+    /* font-size: max(25px, 3vw); */
+    text-align: left;
+  }
+  .introduction h4 {
+    /* font-size: max(18px, 2vw); */
+    text-align: left;
+    width: 60%;
+  }
+  .scrollBtn {
+    transform: translateY(20px);
+  }
+  .introduction .textBtn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: max(2vh, 15px);
+  }
+  .introduction .introBTN {
+    margin: unset;
+  }
+}
+@media screen and (max-width: 610px) {
+  .introduction .slideshow {
+    display: none;
+  }
+  .introduction h1 {
+    text-align: center;
+  }
+  .introduction h4 {
+    text-align: center;
+    width: unset;
+  }
+  .introduction .content .title .textBtn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .scrollBtn {
+    transform: translateY(-8vh);
+  }
+}
+
+/* ////////////////////////////////// */
+/* process section start */
+
+.Process {
+  width: 95%;
+  height: 50vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.Process .processContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 15px 30px;
+  width: 30%;
+  height: 150px;
+}
+.Process .container .text {
+  display: flex;
+  flex-direction: column;
+}
+.Process .number {
+  font-size: 25px;
+  align-self: flex-start;
+  margin-right: 20px;
+}
+.Process .header {
+  font-size: 20px;
+  margin-bottom: max(2vh, 20px);
+}
+.Process .desc {
+  font-size: 18px;
+}
+/* process media quiers */
+@media screen and (max-width: 1350px) {
+  .Process .processContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Process .container {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Process .container {
+    width: 100%;
+  }
+}
+
+/* ////////////////////////////////// */
+/* faq section start */
+.faq {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.faq .allQuesions {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq .quesionContainer {
+  width: 100%;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.faq .quesionContainer .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.faq .quesionContainer .quesion {
+  padding: 20px 0 20px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.faq .quesionContainer .answer {
+  font-size: 16px;
+  color: var(--buttonColor);
+  padding: 0 0 20px 20px;
+  display: none;
+  width: 90%;
+}
+.faq .quesionContainer img {
+  padding: 0 20px 0 0;
+}
+@media screen and (max-width: 1350px) {
+  .faq .allQuesions {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .faq .allQuesions {
+    width: 95%;
+  }
+}
+
+/* ////////////////////////////////// */
+/* contact section start */
+
+.contact {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: max(7vh, 80px) auto;
+  border-radius: 20px;
+}
+/* left side styling */
+.contact .left {
+  width: 40%;
+}
+.contact .left .container {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--buttonColor);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.contact .left .container h1 {
+  text-align: left;
+  font-size: 40px;
+  margin: 0 0 max(2vh, 20px) 0;
+}
+
+.contact .left .container h4 {
+  font-size: 16px;
+  margin-bottom: max(2vh, 10px);
+}
+.contact .left .container .labelContainer {
+  display: flex;
+  align-items: center;
+}
+.topLabelContiner {
+  margin-bottom: max(2vh, 10px);
+}
+.contact .left .container .labelContainer .icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .left .container .labelContainer img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.contact .left .container .labelContainer .background {
+  width: 30px;
+  height: 30px;
+  background-color: var(--iconColor);
+  border-radius: 50%;
+  position: absolute;
+}
+.contact .left .container .labelContainer .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: max(1.5vw, 10px);
+}
+.contact .left .container .labelContainer .text .label {
+  font-size: 18px;
+  color: var(--iconColor);
+}
+.contact .left .container .labelContainer .text .information a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+/* form styling */
+.contact .right {
+  width: 40%;
+}
+.contact .right h1 {
+  text-align: left;
+  font-size: 20px;
+  margin: 0;
+}
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contact .formInput {
+  background: unset;
+  border: 2px solid black;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  margin: max(1.5vh, 10px) 0;
+  border-radius: 0;
+}
+.contact form .nameInput {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.contact form .textarea {
+  height: 100px;
+}
+
+.contact .formInput::placeholder {
+  font-size: 18px;
+}
+.contact .submitBtn {
+  align-self: baseline;
+  background: unset;
+  font-size: 20px;
+  padding: 7px 15px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  border: unset;
+  background: var(--buttonColor);
+  color: white;
+}
+
+/*  moblie stylihng */
+@media screen and (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact .left {
+    width: 100%;
+    margin-bottom: max(2vh, 20px);
+  }
+  .contact .right {
+    width: 100%;
+  }
+  .contact .submitBtn {
+    align-self: center;
+  }
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+.main {
+  position: relative;
+  top: 80px;
+}

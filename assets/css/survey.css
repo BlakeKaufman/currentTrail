@@ -1,0 +1,304 @@
+.navigation {
+  width: 70%;
+  height: max(calc(100vh - 80px), 700px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  top: 80px;
+
+  margin: 0 auto;
+}
+
+.navigation .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation .logo {
+  width: 90%;
+  min-width: 300px;
+  margin-bottom: max(2vh, 20px);
+}
+.navigation .tilecontainer {
+  width: 100%;
+  min-width: 300px;
+}
+.tile {
+  width: 100%;
+  background-color: white;
+  height: max(100px, 15vh);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.internshipContainer {
+  height: 15vh;
+  min-height: 200px;
+  overflow-y: scroll;
+}
+.header {
+  font-size: 35px;
+  margin-bottom: max(2vh, 20px);
+  color: var(--buttonColor);
+}
+.description {
+  font-size: 18px;
+}
+.navigation .addAnother {
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.addAnotherHead {
+  font-size: 25px;
+}
+.navigation .addAnother .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation .addAnother .icon {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+}
+.navigation .addAnother .text .header {
+  margin-bottom: 5px;
+}
+.navigation .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* form styling */
+input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: black;
+}
+
+/* displaying correct form */
+.backgroundForm {
+  width: 100%;
+  display: block;
+}
+.internshipForm {
+  width: 100%;
+  display: none;
+}
+.recruitmentForm {
+  display: block;
+}
+.experienceForm {
+  display: none;
+}
+
+/* background form styling */
+.navigation .right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation .contain {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.navigation .containWithOptions {
+  margin: 0;
+}
+
+/* intersnship form  styling */
+.internshipForm .controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.internshipForm .container {
+  width: 40%;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 4px solid gray;
+  color: gray;
+}
+.internshipForm .title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+/* nav btns */
+.navBtnForForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBtnForForm span {
+  font-size: 20px;
+  color: white;
+}
+.navBtnForForm .container {
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.navBtnForForm .back {
+  width: 30%;
+  background-color: var(--iconColor);
+}
+.navBtnForForm .back:hover {
+  cursor: pointer;
+}
+.navBtnForForm .continue {
+  width: 60%;
+  background-color: var(--continueBackColor);
+}
+.navBtnForForm .continue:hover {
+  cursor: pointer;
+}
+/* ading active class to selected form */
+
+.activeBack {
+  background-color: #50a3dd;
+}
+.activeText {
+  color: white;
+}
+
+/* adding active class to selected control for internship */
+.controls .activeInternForm {
+  color: var(--buttonColor);
+  border-bottom: 4px solid var(--buttonColor);
+}
+
+/* add more options */
+.addOption {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.addOption .options {
+  display: flex;
+  width: 75%;
+  flex-wrap: wrap;
+}
+.addOption .add {
+  color: var(--iconColor);
+  margin-right: 20px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.addOption .add:hover {
+  cursor: pointer;
+}
+.addOption .option {
+  background-color: var(--iconColor);
+  padding: 2px 10px 2px 20px;
+  border-radius: 10px;
+  color: white;
+  margin: 5px;
+}
+.addOption .option:hover {
+  cursor: pointer;
+}
+.addOption .selectedOption {
+  margin-right: 20px;
+}
+
+/* making responsive */
+@media screen and (max-width: 1300px) {
+  .navigation {
+    width: 95%;
+  }
+  .navigation .left {
+    width: 35%;
+  }
+  .navigation .right {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navigation {
+    top: 90px;
+    flex-direction: column;
+    justify-content: unset;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  .navigation .left {
+    width: 100%;
+  }
+  .navigation .logo {
+    width: 30%;
+  }
+  .navigation .tilecontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navigation .tile {
+    width: 45%;
+    min-width: 210px;
+    margin: 10px;
+  }
+  .navigation .addAnother {
+    margin-bottom: max(2vh, 20px);
+  }
+  .navigation .right {
+    width: 95%;
+  }
+  .header {
+    font-size: 25px;
+  }
+  .internshipContainer {
+    display: flex;
+    width: 40vw;
+    min-width: 230px;
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navigation .tile {
+    width: 48%;
+  }
+  .header {
+    margin-bottom: 10px;
+  }
+  .internshipForm .title {
+    font-size: 18px;
+  }
+  .addOption .add {
+    margin-right: 9px;
+  }
+  .navigation .backgroundFormSelect {
+    width: 40%;
+    min-width: unset;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .internshipContainer {
+    width: 62vw;
+    min-width: 160px;
+    height: unset;
+    min-height: unset;
+  }
+}
