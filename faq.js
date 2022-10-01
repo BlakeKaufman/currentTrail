@@ -9,16 +9,20 @@ quesionsCointainer.addEventListener("click", function (e) {
   if (!e.target.classList.contains("quesion")) return;
   quesions.forEach((quesion) => {
     quesion.children[0].children[1].style.display = "none";
-    console.log(quesion.children[0].children[1]);
+    quesion.children[1].src = "./assets/images/chevron-right.svg";
   });
-  if (prev === e.target.parentElement.children[1]) {
-    e.target.parentElement.children[1].style.display = "none";
-    prev = undefined;
-    return;
-  }
-  prev = e.target.parentElement.children[1];
+  // if (prev === e.target.parentElement.children[1]) {
+  //   e.target.parentElement.children[1].style.display = "none";
+  //   prev = undefined;
+  //   return;
+  // }
+  // prev = e.target.parentElement.children[1];
 
+  console.log(e.target.parentElement.children[1].style.display);
   e.target.parentElement.children[1].style.display = "block";
+  e.target.parentElement.parentElement.children[1].src =
+    "./assets/images/chevron-down.svg";
+  console.log(e.target.parentElement.children[1].style.display);
 });
 
 // quesionsCointainer.addEventListener("click", function (e) {
@@ -39,7 +43,6 @@ faqSection.addEventListener("click", function (e) {
   if (!e.target.classList.contains("faq")) return;
   quesions.forEach((quesion) => {
     quesion.children[0].children[1].style.display = "none";
-    console.log();
     quesion.children[1].src = "./assets/images/chevron-right.svg";
   });
 });
